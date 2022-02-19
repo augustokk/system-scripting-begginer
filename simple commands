@@ -1,0 +1,35 @@
+• Create a folder/directory with the name “SystemsScripting”. 
+mkdir SystemsScripting
+ls to check
+• Change into the created folder. 
+cd SystemsScripting
+• Create another folder called “lab01” and change into it. 
+mkdir lab01 
+cd lab01
+• Create two files with any names of your choice. 
+touch testefile01.sh
+touch testefile02.sh
+ls to check
+• Create two folders. 
+mkdir testefolder01
+mkdir testefolder02
+ls to check
+• List out the content of your current working directory. 
+ls
+• Create an Alias Command to copy folders.  
+alias copy=’cp -rf’
+• List out the existing Aliases on your system. 
+alias
+• Use the created Alias to copy one of your existing folder.
+copy testefolder01 copiatestefolder01 
+• List out your current working environment to verify the success of the copying. 
+Ls
+
+• Remove the copy Alias and verify its removal by listing out existing Aliases. 
+unalias copy 
+alias
+• Rename one of the files you created initially. 
+mv testefile01.sh newnametestefile01.sh
+• Move the second file into a folder.
+mv testefile02.sh testefolder02
+ls to check
