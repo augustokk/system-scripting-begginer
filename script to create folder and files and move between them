@@ -1,0 +1,31 @@
+
+#!/bin/bash
+# create two folder
+mkdir folder1
+mkdir folder2
+echo “list folders created:”
+ls
+
+#create 5 files in folder1
+touch folder1/file1
+touch folder1/file2
+touch folder1/file3
+touch folder1/file4
+touch folder1/file5
+
+#chek if folders was created
+Cd folder1
+Echo “list files”
+Ls
+# return to previous directory
+Cd -
+#provide full permission to all files
+chmod 777 folder1/*
+#move the file 1, 2, 3 in folder2
+mv folder1/file1 folder2
+mv folder1/file2 folder2
+
+mv folder1/file3 folder2
+
+# print the content of the second folder
+ls folder2
