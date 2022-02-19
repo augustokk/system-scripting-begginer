@@ -1,0 +1,15 @@
+first we need to install gedit editor at our linux mint - virtual machine
+for that we need to run the following codes
+
+- Install command: sudo apt-get install gedit 
+- Usage command: gedit yourFileName 
+
+gedit HelloWorld
+(on the file HelloWorld):
+#!/bin/bash
+echo “Hello world”
+(back to terminal)
+# give autorizathion to the file
+chmod 755 HelloWorld
+# run the file
+./HelloWorld
