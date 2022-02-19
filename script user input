@@ -1,0 +1,10 @@
+# at terminal
+gedit userInput
+(on the file userInput):
+#!/bin/bash
+echo -n “Enter your name: “
+read username
+echo “Welcome $username to wonderful world of system scripting”
+(back to terminal)
+chmod 755 userInput
+./userInput
