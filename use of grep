@@ -16,5 +16,17 @@ grep -o [$][0-9] /home/augusto/Downloads/SherlockHolmes.txt	| wc -w
 grep -i -c sherlock /home/augusto/Downloads/SherlockHolmes.txt 
 
 
+1.	Sort the list of countries and remove duplicates.
+Sort /home/augusto/Downloads/countries.txt | uniq
+
+2.	Extract the last 60 countries into a new file and from this new file output the name of countries starting with “M”.
+tail -n60 /home/augusto/Downloads/countries.txt > newCountries.txt
+grep ‘^M’ /home/augusto/newCountries.txt
+
+3.	From the original file, search and output the names of countries that end with “s”.
+Grep ‘s$’ /home/augusto/Downloads/countries.txt
+
+4.	From the original file, search and output the names of countries that begins with “A” and ends with “a”.
+Grep ‘a$’ /home/augusto/Downloads/countries.txt | Grep ‘^A’ 
 
 
